@@ -21,6 +21,11 @@ The virtual bridge has the ability to turn entities on or off, or change the bri
   It is recommended to assign a static IP address to the computer running Home Assistant. This is because the Amazon Echo discovers devices by IP addresses, and if the IP changes, the Echo won't be able to control it. This is easiest done from your router, see your router's manual for details.
 </p>
 
+<p class='note'>
+  If you do not have an actual philips hue bridge device, you must configure your google home with an android device.
+  iOS google home application is restricted to hue cloud so you won't reach the local scanning process.
+</p>
+
 ### {% linkable_title Configuration %}
 
 To enable the emulated Hue bridge, add one of the following configs to your `configuration.yaml` file:
